@@ -83,6 +83,24 @@ a:hover {
   max-width: 1080px;
   margin: 0 auto;
   padding: 3rem 1.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.hero__text {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.hero__photo {
+  flex: 0 0 auto;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.35);
 }
 
 .hero__eyebrow {
@@ -273,6 +291,18 @@ a:hover {
   text-align: center;
   padding: 2rem 1.5rem;
   font-size: 0.95rem;
+}
+
+@media (max-width: 760px) {
+  .hero__content {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  .hero__photo {
+    width: 160px;
+    height: 160px;
+  }
 }
 
 @media (max-width: 540px) {
