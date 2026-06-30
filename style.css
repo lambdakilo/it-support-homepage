@@ -248,6 +248,20 @@ a:hover {
   margin-bottom: 0.5rem;
 }
 
+.card__price {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+}
+
+.card__price span {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-light);
+}
+
 .card__text {
   color: var(--text-light);
 }
